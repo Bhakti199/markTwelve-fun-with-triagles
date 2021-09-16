@@ -2,7 +2,7 @@ const quizForm = document.querySelector(".quiz-triangle");
 const submitButton = document.querySelector("#submit-btn");
 const resultQuiz = document.querySelector("#show-message");
 
-const correctAnswers =["180°" ,"Right Angled Triangle", "70°" ,"all sides are equal", "Different"];
+const correctAnswers =["180°" ,"Right Angled Triangle", "70°" ,"all sides are equal", "Different" , "60°" , "12"];
 
 
 submitButton.addEventListener("click", calculateResult);
@@ -15,7 +15,6 @@ for(let value of formResults.values())
 {
         if(value === correctAnswers[index]){
             score = score + 1;
-            // console.log("herecc index");
         }
         index = index + 1 ;
       } 
