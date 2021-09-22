@@ -14,7 +14,7 @@ function calculateAreaOfTriangle(){
     {
         const areaOfTri = calculateArea(a,b)
         // const resultFinal = Math.sqrt(sumOfSidesSq);
-        showMessage.innerText ="The area of triangle is : " +  areaOfTri ;
+        showMessage.innerText ="The area of triangle is : " +  areaOfTri.toFixed(2) ;
        
     }else{
         showMessage.innerText ="Please, Enter valid inputs";
