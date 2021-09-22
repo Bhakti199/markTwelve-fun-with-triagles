@@ -14,7 +14,7 @@ function calculateHypotenuse(){
     {
         const sumOfSidesSq = sumOfSquareOfSides(Number(sideInputs[0].value), Number(sideInputs[1].value));
         const resultFinal = Math.sqrt(sumOfSidesSq);
-        messageDisplay.innerText ="The value of Hypotenuse B is : " +  resultFinal ;
+        messageDisplay.innerText ="The value of Hypotenuse B is : " +  resultFinal.toFixed(2);
        
     }else{
         messageDisplay.innerText ="Please, Enter valid inputs";
