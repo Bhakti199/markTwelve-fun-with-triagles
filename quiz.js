@@ -5,12 +5,14 @@ const resultQuiz = document.querySelector("#show-message");
 const correctAnswers =["180°" ,"Right Angled Triangle", "70°" ,"all sides are equal", "Different" , "60°" , "12"];
 
 
-submitButton.addEventListener("click", calculateResult);
+quizForm.addEventListener("submit", (e)=>{
 
-function calculateResult(){
+  e.preventDefault()
+
 let score = 0;
 let index = 0;
 const formResults = new FormData(quizForm);
+
 for(let value of formResults.values())
 {
         if(value === correctAnswers[index]){
@@ -19,5 +21,5 @@ for(let value of formResults.values())
         index = index + 1 ;
       } 
       resultQuiz.innerText  = "Your score is " + score;
-}
+});
 
